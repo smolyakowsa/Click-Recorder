@@ -14,7 +14,9 @@ class App(customtkinter.CTk):
         self.play.place(relx=0.5, rely= 0.1)
 
     def create(self):
+        self.withdraw()
         create_window.CreateWindow()
+        self.deiconify()
 
     def play(self):
         print('Кнопка 2')

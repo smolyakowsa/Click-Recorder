@@ -10,3 +10,8 @@ class CreateWindow(customtkinter.CTkToplevel):
         self.label.pack(pady=20)
         self.close_button = customtkinter.CTkButton(self, text="Закрыть", command=self.destroy)
         self.close_button.pack(pady=10)
+        self.protocol("WM_DELETE_WINDOW",self.close_window())
+
+    def close_window(self):
+        self.destroy()
+        self.master.deiconify()
