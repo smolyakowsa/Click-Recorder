@@ -19,7 +19,7 @@ class App(customtkinter.CTk):
 
         self.close = customtkinter.CTkButton(self, text='Close', width=250, height=50,border_width = 0,
                                               corner_radius=10, command=self.destroy)
-        self.close.place(relx=0.33, rely=0.8)
+        self.close.place(relx=0.33, rely=0.85)
 
     def create_project(self):
         self.withdraw()
