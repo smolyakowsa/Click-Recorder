@@ -8,14 +8,17 @@ class App(customtkinter.CTk):
         self.title("Click Recorder")
         self.geometry("700x500")
 
-        self.create = customtkinter.CTkButton(self, text='Create', command=self.create_project)
+        self.create = customtkinter.CTkButton(self, text='Create', width=250, height=50,border_width = 0,
+                                              corner_radius=10, command=self.create_project)
         self.create.place(relx=0.1, rely= 0.1)
 
-        self.play = customtkinter.CTkButton(self, text='Play', command=self.open_project)
-        self.play.place(relx=0.5, rely= 0.1)
+        self.open_project = customtkinter.CTkButton(self, text='Open', width=250, height=50,border_width = 0,
+                                              corner_radius=10,command=self.open_project)
+        self.open_project.place(relx=0.55, rely= 0.1)
 
-        self.close = customtkinter.CTkButton(self, text='Close', command=self.destroy)
-        self.close.place(relx=0.4, rely=0.9)
+        self.close = customtkinter.CTkButton(self, text='Close', width=250, height=50,border_width = 0,
+                                              corner_radius=10, command=self.destroy)
+        self.close.place(relx=0.33, rely=0.8)
 
     def create_project(self):
         self.withdraw()
