@@ -1,5 +1,5 @@
 import customtkinter
-from additional_windows import create_window
+from create_window import CreateProject
 
 class App(customtkinter.CTk):
     def __init__(self):
@@ -7,18 +7,18 @@ class App(customtkinter.CTk):
         self.title("Click Recorder")
         self.geometry("700x500")
 
-        self.create = customtkinter.CTkButton(self, text='Create', command=self.create)
+        self.create = customtkinter.CTkButton(self, text='Create', command=self.create_project)
         self.create.place(relx=0.1, rely= 0.1)
 
-        self.play = customtkinter.CTkButton(self, text='Play', command=self.play)
+        self.play = customtkinter.CTkButton(self, text='Play', command=self.open_project)
         self.play.place(relx=0.5, rely= 0.1)
 
-    def create(self):
+    def create_project(self):
         self.withdraw()
-        create_window.CreateWindow()
-        self.deiconify()
+        CreateProject(self)
 
-    def play(self):
+
+    def open_project(self):
         print('Кнопка 2')
 
 if __name__ == "__main__":
