@@ -7,6 +7,7 @@ class App(customtkinter.CTk):
         super().__init__()
         self.title("Click Recorder")
         self.geometry("700x500")
+        self._set_appearance_mode('light')
 
         self.create = customtkinter.CTkButton(self, text='Create', width=250, height=50,border_width = 0,
                                               corner_radius=10, command=self.create_project)

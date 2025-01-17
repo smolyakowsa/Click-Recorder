@@ -9,8 +9,9 @@ class CreateProject(customtkinter.CTkToplevel):
         self.geometry("700x500")
         self.label = customtkinter.CTkLabel(self, text="Creat new record")
         self.label.pack(pady=20)
-        self.close_button = customtkinter.CTkButton(self, text="Закрыть", command=self.close_window)
-        self.close_button.pack(pady=10)
+        self.close_button = customtkinter.CTkButton(self, text="Закрыть",width=250, height=50,border_width = 0,
+                                              corner_radius=10, command=self.close_window)
+        self.close_button.place(relx=0.33, rely=0.8)
 
     def close_window(self):
         self.destroy()
