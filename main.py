@@ -1,7 +1,7 @@
 import customtkinter
 from create_project import CreateProject
 from open_project import OpenProject
-from Pillow import Image, ImageTk
+#from Pillow import Image, ImageTk
 
 class App(customtkinter.CTk):
     def __init__(self):
@@ -10,7 +10,7 @@ class App(customtkinter.CTk):
         self.geometry("700x500")
         self._set_appearance_mode('light')
 
-        self.img = customtkinter.CTkLabel(self, image=)
+        #self.img = customtkinter.CTkLabel(self, image=)
 
         self.create = customtkinter.CTkButton(self, text='Create', width=250, height=50,border_width = 0,
                                               corner_radius=10, command=self.create_project)
