@@ -1,6 +1,7 @@
 import customtkinter
-from create_project import CreateProject
-from open_project import OpenProject
+from windows.create_project import CreateProject
+from windows.open_project import OpenProject
+
 #from Pillow import Image, ImageTk
 
 class App(customtkinter.CTk):
