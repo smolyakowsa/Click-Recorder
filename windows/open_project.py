@@ -43,6 +43,7 @@ class OpenProject(customtkinter.CTkToplevel):
 
     def play(self):
         file_to_play = os.getcwd() + '\\records\\' + str(self.choose.get())
+        print(file_to_play)
         self.withdraw()
         os.system(file_to_play)
-        self.deiconify
+        self.deiconify()
