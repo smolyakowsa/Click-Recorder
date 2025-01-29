@@ -42,7 +42,7 @@ class OpenProject(customtkinter.CTkToplevel):
         return files_list
 
     def play(self):
-        file_to_play = self.choose.get()
+        file_to_play = os.getcwd() + '\\records\\' + str(self.choose.get())
         self.withdraw()
         os.system(file_to_play)
         self.deiconify

@@ -1,5 +1,3 @@
-!
-
 import pyautogui
 import time
 
